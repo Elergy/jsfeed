@@ -1,0 +1,19 @@
+{
+  "name": "jsfeed",
+  "version": "0.0.1",
+  "description": "The linkblog with links to most popular articles related to JavaScript and IT",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elergy",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-syntax-async-functions": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4"
+  },
+  "devDependencies": {
+  }
+}
