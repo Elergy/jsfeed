@@ -54,170 +54,99 @@ describe('tweet', () => {
     });
 
     describe('create', () => {
-        it('tweet should be created', (done) => {
-            let promise = createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
+        it('tweet should be created', async () => {
+            let tweet = await createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
 
-            promise.then((tweet) => {
-                try {
-                    tweet = tweet.toJSON();
-                    delete tweet.__v;
+            tweet = tweet.toJSON();
+            delete tweet.__v;
 
-                    expect(tweet).to.deep.equal({
-                        _id: 123,
-                        text: 'test',
-                        createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
-                        likesCount: 0,
-                        retweetCount: 0
-                    });
-                } catch (err) {
-                    done(err);
-                    return;
-                }
-
-                done();
-            }, (err) => done(err));
-        });
-
-        it('tweet with existed id should not be created', (done) => {
-            let promise = createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
-
-            promise.then((tweet) => {
-                done('tweet was created');
-            }, (err) => {
-                try {
-                    expect(err.name).to.be.equal('MongoError');
-                } catch (ex) {
-                    done(ex);
-                    return;
-                }
-
-                done();
+            expect(tweet).to.deep.equal({
+                _id: 123,
+                text: 'test',
+                createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
+                likesCount: 0,
+                retweetCount: 0
             });
         });
 
-        it('tweet with defined likesCount and retweetCount should be created', (done) => {
-            let promise = createTweet(1234, 'test', 'Wed Jun 06 20:07:10 +0000 2012', 6, 18);
+        it('tweet with existed id should not be created', async () => {
+            let exception;
+            try {
+                let tweet = await createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
+            } catch(ex) {
+                exception = ex;
+            }
 
-            promise.then((tweet) => {
-                try {
-                    tweet = tweet.toJSON();
-                    delete tweet.__v;
+            expect(exception.name).to.be.equal('MongoError');
+        });
 
-                    expect(tweet).to.deep.equal({
-                        _id: 1234,
-                        text: 'test',
-                        createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
-                        likesCount: 6,
-                        retweetCount: 18
-                    });
-                } catch (err) {
-                    done(err);
-                    return;
-                }
+        it('tweet with defined likesCount and retweetCount should be created', async () => {
+            let tweet = await createTweet(1234, 'test', 'Wed Jun 06 20:07:10 +0000 2012', 6, 18);
 
-                done();
-            }, (err) => done(err));
+            tweet = tweet.toJSON();
+            delete tweet.__v;
+
+            expect(tweet).to.deep.equal({
+                _id: 1234,
+                text: 'test',
+                createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
+                likesCount: 6,
+                retweetCount: 18
+            });
         });
     });
 
     describe('remove', () => {
-        it('should remove one tweet', (done) => {
-            let oneTweetPromise = createTweet(9990, 'to-remove-one', 'Wed Jun 06 20:07:10 +0000 2012');
-            oneTweetPromise.then(() => {
-                removeTweets(9990).then(() => {
-                    TweetModel
-                        .count({text: 'to-remove-one'})
-                        .then((count) => {
-                            try {
-                                expect(count).to.equal(0);
-                            } catch (ex) {
-                                done(ex);
-                                return;
-                            }
+        it('should remove one tweet', async () => {
+            let tweet = await createTweet(9990, 'to-remove-one', 'Wed Jun 06 20:07:10 +0000 2012');
+            await removeTweets(9990);
 
-                            done();
-                        }, (err) => done(err));
-                }, (err) => done(err));
-            }, (err) => done(err));
+            let countTweetsToRemove = await TweetModel.count({text: 'to-remove-one'});
+            expect(countTweetsToRemove).to.equal(0);
         });
 
-        it('should remove one tweet when two were created', (done) => {
-            let firstTweetPromise = createTweet(8880, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
-            let secondTweetPromise = createTweet(8881, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
-            Promise.all([firstTweetPromise, secondTweetPromise]).then(() => {
-                removeTweets(8880).then(() => {
-                    TweetModel
-                        .count({text: 'to-remove-one-two'})
-                        .then((count) => {
-                            try {
-                                expect(count).to.equal(1);
-                            } catch (ex) {
-                                done(ex);
-                                return;
-                            }
+        it('should remove one tweet when two were created', async () => {
+            let firstTweet = await createTweet(8880, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
+            let secondTweet = await createTweet(8881, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
 
-                            done();
-                        }, (err) => done(err));
-                }, (err) => done(err));
-            }, (err) => done(err));
+            await removeTweets(8880);
+
+            let countTweets = await TweetModel.count({text: 'to-remove-one-two'});
+            expect(countTweets).to.equal(1);
         });
 
-        it('should remove two tweets when three were created', (done) => {
-            let firstTweetPromise = createTweet(7770, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
-            let secondTweetPromise = createTweet(7771, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
-            let thirdTweetPromise = createTweet(7772, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
-            Promise.all([firstTweetPromise, secondTweetPromise, thirdTweetPromise]).then(() => {
-                removeTweets(7771, 7772).then(() => {
-                    TweetModel
-                        .count({text: 'to-remove-two-three'})
-                        .then((count) => {
-                            try {
-                                expect(count).to.equal(1);
-                            } catch (ex) {
-                                done(ex);
-                                return;
-                            }
+        it('should remove two tweets when three were created', async () => {
+            await createTweet(7770, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(7771, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(7772, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
 
-                            done();
-                        }, (err) => done(err));
-                }, (err) => done(err));
-            }, (err) => done(err));
+            await removeTweets(7771, 7772);
+
+            let count = await TweetModel.count({text: 'to-remove-two-three'});
+            expect(count).to.equal(1);
         });
     });
 
     describe('update', () => {
-        it('should update counts', (done) => {
-            let tweetPromise = createTweet(6660, 'to-update-counts', 'Wed Jun 06 20:07:10 +0000 2012', 4, 8);
+        it('should update counts', async() => {
+            let tweet = await createTweet(6660, 'to-update-counts', 'Wed Jun 06 20:07:10 +0000 2012', 4, 8);
 
-            tweetPromise.then((tweet) => {
-                try {
-                    expect(tweet.likesCount).to.equal(4);
-                    expect(tweet.retweetCount).to.equal(8);
-                } catch (ex) {
-                    done(ex);
-                }
-            }).then(() => {
-                return updateCounts(6660, 222, 1);
-            }).then(() => {
-                return TweetModel.findById(6660);
-            }).then((tweet) => {
-                try {
-                    tweet = tweet.toJSON();
-                    delete tweet.__v;
+            expect(tweet.likesCount).to.equal(4);
+            expect(tweet.retweetCount).to.equal(8);
 
-                    expect(tweet).to.deep.equal({
-                        _id: 6660,
-                        text: 'to-update-counts',
-                        createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
-                        likesCount: 222,
-                        retweetCount: 1
-                    });
-                } catch (ex) {
-                    done(ex);
-                    return;
-                }
+            await updateCounts(6660, 222, 1);
 
-                done();
+            tweet = await TweetModel.findById(6660);
+
+            tweet = tweet.toJSON();
+            delete tweet.__v;
+
+            expect(tweet).to.deep.equal({
+                _id: 6660,
+                text: 'to-update-counts',
+                createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
+                likesCount: 222,
+                retweetCount: 1
             });
         });
     });

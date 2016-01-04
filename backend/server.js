@@ -3,7 +3,9 @@
 require('babel-register', {
     retainLines: true,
     plugins: [
-        'syntax-async-functions'
+        'transform-regenerator',
+        'syntax-async-functions',
+        'transform-async-to-generator'
     ]
 });
 

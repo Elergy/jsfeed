@@ -1,4 +1,5 @@
 {
+  "retainLines": true,
   "presets": ["es2015"],
-  "plugins": ["syntax-async-functions"]
+  "plugins": ["syntax-async-functions", "transform-async-to-generator", "transform-regenerator"]
 }

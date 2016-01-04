@@ -1,4 +1,4 @@
-let {model} = require('mongoose');
+let mongoose = require('mongoose');
 import postSchema from './schema';
 
-export default model('Post', postSchema);
+export default mongoose.model('Post', postSchema);

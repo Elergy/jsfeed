@@ -1,4 +1,4 @@
-import PostModel from 'model';
+import PostModel from './../model';
 
 /**
  * get post with specified url

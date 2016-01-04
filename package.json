@@ -4,20 +4,26 @@
   "description": "The linkblog with links to most popular articles related to JavaScript and IT",
   "main": "backend/server.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register test/**/*.spec.js"
+    "test": "mocha --compilers js:babel-core/register,js:babel-polyfill test/**/*.spec.js"
   },
   "author": "Elergy",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.3.26",
     "babel-plugin-syntax-async-functions": "^6.3.13",
+    "babel-plugin-transform-async-to-generator": "^6.3.13",
+    "babel-plugin-transform-regenerator": "^6.3.26",
+    "babel-polyfill": "^6.3.14",
     "babel-register": "^6.3.13",
     "express": "^4.13.3",
-    "mongoose": "^4.3.4"
+    "install": "^0.4.1",
+    "mongoose": "^4.3.4",
+    "npm": "^3.5.2"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
   }
 }
