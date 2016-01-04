@@ -1,7 +1,9 @@
 let {expect} = require('chai');
-import '../common/init-connection';
+import initConnection from '../common/init-connection';
 
-describe('create post', () => {
+xdescribe('create post', () => {
+    initConnection();
+
     it('post without tweet shound not be created', (done) => {
 
     });
@@ -17,6 +19,4 @@ describe('create post', () => {
     it('post should have tags to be published', (done) => {
 
     });
-
-    it('')
 });

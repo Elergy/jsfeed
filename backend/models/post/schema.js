@@ -7,5 +7,5 @@ export default new Schema({
     posted: {type: Boolean, default: false},
     blacklisted: {type: Boolean, default: false},
     tags: {type: [String], default: []},
-    tweets: [{type: String, ref: 'Tweet'}]
+    tweets: [{type: Number, ref: 'Tweet'}]
 });
