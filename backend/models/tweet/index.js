@@ -8,13 +8,18 @@ const TOO_LONG_AGO_DATE = new Date(2005, 1, 1);
  * create new Tweet and save it to DB
  * @param {Number} id
  * @param {String} text
+ * @param {String} userName
+ * @param {String} userLogin
  * @param {String} createDate ex. 'Wed Jun 06 20:07:10 +0000 2012'
  * @param {Number} [likesCount=0]
  * @param {Number} [retweetCount=0]
  * @returns {Promise}
  */
-function create(id, text='', createDate, likesCount=0, retweetCount=0) {
+function create(id, text, userName, userLogin, createDate, likesCount=0, retweetCount=0) {
     assert.equal(typeof id, 'number', 'tweet.id is not a number');
+    assert.equal(typeof text, 'string', 'tweet.text is not a string');
+    assert.equal(typeof userName, 'string', 'tweet.userName is not a string');
+    assert.equal(typeof userLogin, 'string', 'tweet.userLogin is not a string');
     assert.equal(typeof createDate, 'string', 'createDate is not a string');
     createDate = new Date(createDate);
     assert.equal(isNaN(createDate.getTime()), false, 'createDate has unknown format');
@@ -28,7 +33,9 @@ function create(id, text='', createDate, likesCount=0, retweetCount=0) {
         text,
         createDate,
         likesCount,
-        retweetCount
+        retweetCount,
+        userName,
+        userLogin
     });
 
     return tweet.save();

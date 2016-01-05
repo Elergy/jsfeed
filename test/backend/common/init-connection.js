@@ -1,6 +1,5 @@
 let mongoose = require('mongoose');
 let {expect} = require('chai');
-import {address} from './mongo-config';
 
 function initConnection() {
     let connection;
@@ -16,7 +15,7 @@ function initConnection() {
             done();
         });
 
-        mongoose.connect(address);
+        mongoose.connect(process.env.mongo_address);
     });
 
     after((done) => {

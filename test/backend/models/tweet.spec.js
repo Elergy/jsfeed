@@ -21,41 +21,43 @@ describe('tweet', () => {
         });
 
         it('create call without date should throw an error', () => {
-            expect(() => createTweet(123)).to.throw('createDate is not a string');
+            expect(() => createTweet(123, 'text', 'Author', '@author')).to.throw('createDate is not a string');
         });
 
         it('create call with unknown createDate should throw an error', () => {
-            expect(() => createTweet(123, 'test', 'Unknown date')).to.throw('createDate has unknown format');
+            expect(() => {
+                createTweet(123, 'test', 'Author', '@author', 'Unknown date');
+            }).to.throw('createDate has unknown format');
         });
 
         it('create call with too high createDate should throw an error', () => {
             expect(() => {
-                createTweet(123, 'test', new Date(2125, 6, 6).toString());
+                createTweet(123, 'test', 'Author', '@author', new Date(2125, 6, 6).toString());
             }).to.throw('createDate is too high');
         });
 
         it('create call with too low createDate should throw an error', () => {
             expect(() => {
-                createTweet(123, 'test', new Date(1992, 6, 6).toString());
+                createTweet(123, 'test', 'Author', '@author', new Date(1992, 6, 6).toString());
             }).to.throw('createDate is too long ago');
         });
 
         it('create call with unknown likesCount should throw an error', () => {
             expect(() => {
-                createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012', 'TEST');
+                createTweet(123, 'test', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012', 'TEST');
             }).to.throw('likesCount is not a number');
         });
 
         it('create call with unknown retweetCount should throw an error', () => {
             expect(() => {
-                createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012', 6, 'TEST');
+                createTweet(123, 'test', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012', 6, 'TEST');
             }).to.throw('retweetCount is not a number');
         });
     });
 
     describe('create', () => {
         it('tweet should be created', async () => {
-            let tweet = await createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
+            let tweet = await createTweet(123, 'test', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
 
             tweet = tweet.toJSON();
             delete tweet.__v;
@@ -63,6 +65,8 @@ describe('tweet', () => {
             expect(tweet).to.deep.equal({
                 _id: 123,
                 text: 'test',
+                userName: 'Author',
+                userLogin: '@author',
                 createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
                 likesCount: 0,
                 retweetCount: 0
@@ -72,7 +76,7 @@ describe('tweet', () => {
         it('tweet with existed id should not be created', async () => {
             let exception;
             try {
-                let tweet = await createTweet(123, 'test', 'Wed Jun 06 20:07:10 +0000 2012');
+                await createTweet(123, 'test', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
             } catch(ex) {
                 exception = ex;
             }
@@ -81,7 +85,7 @@ describe('tweet', () => {
         });
 
         it('tweet with defined likesCount and retweetCount should be created', async () => {
-            let tweet = await createTweet(1234, 'test', 'Wed Jun 06 20:07:10 +0000 2012', 6, 18);
+            let tweet = await createTweet(1234, 'test', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012', 6, 18);
 
             tweet = tweet.toJSON();
             delete tweet.__v;
@@ -89,6 +93,8 @@ describe('tweet', () => {
             expect(tweet).to.deep.equal({
                 _id: 1234,
                 text: 'test',
+                userName: 'Author',
+                userLogin: '@author',
                 createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
                 likesCount: 6,
                 retweetCount: 18
@@ -98,7 +104,7 @@ describe('tweet', () => {
 
     describe('remove', () => {
         it('should remove one tweet', async () => {
-            let tweet = await createTweet(9990, 'to-remove-one', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(9990, 'to-remove-one', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
             await removeTweets(9990);
 
             let countTweetsToRemove = await TweetModel.count({text: 'to-remove-one'});
@@ -106,8 +112,8 @@ describe('tweet', () => {
         });
 
         it('should remove one tweet when two were created', async () => {
-            let firstTweet = await createTweet(8880, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
-            let secondTweet = await createTweet(8881, 'to-remove-one-two', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(8880, 'to-remove-one-two', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(8881, 'to-remove-one-two', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
 
             await removeTweets(8880);
 
@@ -116,9 +122,9 @@ describe('tweet', () => {
         });
 
         it('should remove two tweets when three were created', async () => {
-            await createTweet(7770, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
-            await createTweet(7771, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
-            await createTweet(7772, 'to-remove-two-three', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(7770, 'to-remove-two-three', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(7771, 'to-remove-two-three', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(7772, 'to-remove-two-three', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
 
             await removeTweets(7771, 7772);
 
@@ -129,7 +135,8 @@ describe('tweet', () => {
 
     describe('update', () => {
         it('should update counts', async() => {
-            let tweet = await createTweet(6660, 'to-update-counts', 'Wed Jun 06 20:07:10 +0000 2012', 4, 8);
+            let tweet = await createTweet(6660, 'to-update-counts', 'Author', '@author',
+                'Wed Jun 06 20:07:10 +0000 2012', 4, 8);
 
             expect(tweet.likesCount).to.equal(4);
             expect(tweet.retweetCount).to.equal(8);
@@ -144,6 +151,8 @@ describe('tweet', () => {
             expect(tweet).to.deep.equal({
                 _id: 6660,
                 text: 'to-update-counts',
+                userName: 'Author',
+                userLogin: '@author',
                 createDate: new Date('Wed Jun 06 20:07:10 +0000 2012'),
                 likesCount: 222,
                 retweetCount: 1

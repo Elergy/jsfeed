@@ -1,6 +1,6 @@
 let assert = require('assert');
 
-import getPostUrl from './get-post-url';
+import removeUrlParams from './../../../common/remove-url-params';
 import getPostByUrl from './get-post-by-url';
 import PostModel from './../model';
 
@@ -12,7 +12,7 @@ import PostModel from './../model';
  * @returns {Promise}
  */
 export default async function create(url, tweetId) {
-    url = getPostUrl(url);
+    url = removeUrlParams(url);
     assert.equal(typeof tweetId, 'number', 'tweetId is not a number');
     assert.equal(typeof url, 'string', 'url is not a string');
 

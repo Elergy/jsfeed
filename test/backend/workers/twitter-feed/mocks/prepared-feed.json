@@ -1,0 +1,62 @@
+[
+    {
+        "createDate": "Tue Jan 05 18:25:06 +0000 2016",
+        "id": 684440501894811600,
+        "text": "«Реал» заплатит Бенитесу за расторжение контракта € 9,5 млн https://t.co/TaRkiX6zj1",
+        "userName": "Новости футбола",
+        "userLogin": "@champ_football",
+        "urls": [
+            "http://www.championat.com/football/news-2344505-real-zaplatit-benitesu-za-rastorzhenie-kontrakta--95-mln.html"
+        ]
+    },
+    {
+        "createDate": "Tue Jan 05 18:25:04 +0000 2016",
+        "id": 684440493946581000,
+        "text": "Р. Мартинес: «Эвертон» не продаст Миральяса никому https://t.co/HNZL6OvR5t",
+        "userName": "Новости футбола",
+        "userLogin": "@champ_football",
+        "urls": [
+            "http://www.championat.com/football/news-2344503-r-martines-jeverton-ne-prodast-miraljasa-nikomu.html"
+        ]
+    },
+    {
+        "createDate": "Tue Jan 05 05:50:05 +0000 2016",
+        "id": 684250493540024300,
+        "text": "Cool! Making a music video with WebGL. https://t.co/aEDiUEWxL4 #JavaScript",
+        "userName": "Go JS!",
+        "userLogin": "@JS_Cheerleader",
+        "urls": [
+            "https://medium.com/@superhighfives/making-a-music-video-f60757ceb4cf"
+        ]
+    },
+    {
+        "createDate": "Tue Jan 05 18:23:44 +0000 2016",
+        "id": 684440157588713500,
+        "text": "[Перевод] Parallelism vs Concurrency: правильно подбираем инструменты - https://t.co/KRptMdbfm1",
+        "userName": "RSS-лента Хабрахабра",
+        "userLogin": "@habrahabr_feed",
+        "urls": [
+            "http://habrahabr.ru/company/piter/blog/274569"
+        ]
+    },
+    {
+        "createDate": "Tue Jan 05 18:20:24 +0000 2016",
+        "id": 684439317113012200,
+        "text": "No really, this is a good explainer. \n\nhttps://t.co/YBj1WZHsiO",
+        "userName": "Secret Ceej Weapon",
+        "userLogin": "@ceejbot",
+        "urls": [
+            "http://www.theonion.com/graphic/what-you-need-know-about-oregon-militia-standoff-52111"
+        ]
+    },
+    {
+        "createDate": "Tue Jan 05 17:49:06 +0000 2016",
+        "id": 684431442516967400,
+        "text": "We have an article for you - https://t.co/mkLYg9DVuO  #NativeMobile #JavaScript",
+        "userName": "NativeScript",
+        "userLogin": "@nativescript",
+        "urls": [
+            "https://www.nativescript.org/allfeatures"
+        ]
+    }
+]

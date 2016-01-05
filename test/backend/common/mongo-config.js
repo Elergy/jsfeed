@@ -1,1 +1,0 @@
-export const address = 'mongodb://192.168.99.100/test';

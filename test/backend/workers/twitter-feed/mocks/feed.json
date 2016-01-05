@@ -1,0 +1,1474 @@
+[
+    {
+        "created_at": "Tue Jan 05 18:25:06 +0000 2016",
+        "id": 684440501894811600,
+        "id_str": "684440501894811648",
+        "text": "«Реал» заплатит Бенитесу за расторжение контракта € 9,5 млн https://t.co/TaRkiX6zj1",
+        "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 183977596,
+            "id_str": "183977596",
+            "name": "Новости футбола",
+            "screen_name": "champ_football",
+            "location": "Россия",
+            "description": "Главные новости футбола портала Чемпионат.com",
+            "url": "http://t.co/jVLtxi43qu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/jVLtxi43qu",
+                            "expanded_url": "http://www.championat.com/football",
+                            "display_url": "championat.com/football",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 35598,
+            "friends_count": 13,
+            "listed_count": 231,
+            "created_at": "Sat Aug 28 11:00:33 +0000 2010",
+            "favourites_count": 0,
+            "utc_offset": 10800,
+            "time_zone": "Moscow",
+            "geo_enabled": true,
+            "verified": true,
+            "statuses_count": 241784,
+            "lang": "ru",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "F06013",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/722834525/a7a8942057436b37daddccdcb1418b43.jpeg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/722834525/a7a8942057436b37daddccdcb1418b43.jpeg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/659361279459487744/_lxfqZtJ_normal.png",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/659361279459487744/_lxfqZtJ_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/183977596/1426495494",
+            "profile_link_color": "3948A8",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "E6F6F9",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/TaRkiX6zj1",
+                    "expanded_url": "http://dlvr.it/DBbN9j",
+                    "display_url": "dlvr.it/DBbN9j",
+                    "indices": [
+                        60,
+                        83
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "ru"
+    },
+    {
+        "created_at": "Tue Jan 05 18:25:04 +0000 2016",
+        "id": 684440493946581000,
+        "id_str": "684440493946580992",
+        "text": "Р. Мартинес: «Эвертон» не продаст Миральяса никому https://t.co/HNZL6OvR5t",
+        "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 183977596,
+            "id_str": "183977596",
+            "name": "Новости футбола",
+            "screen_name": "champ_football",
+            "location": "Россия",
+            "description": "Главные новости футбола портала Чемпионат.com",
+            "url": "http://t.co/jVLtxi43qu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/jVLtxi43qu",
+                            "expanded_url": "http://www.championat.com/football",
+                            "display_url": "championat.com/football",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 35598,
+            "friends_count": 13,
+            "listed_count": 231,
+            "created_at": "Sat Aug 28 11:00:33 +0000 2010",
+            "favourites_count": 0,
+            "utc_offset": 10800,
+            "time_zone": "Moscow",
+            "geo_enabled": true,
+            "verified": true,
+            "statuses_count": 241784,
+            "lang": "ru",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "F06013",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/722834525/a7a8942057436b37daddccdcb1418b43.jpeg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/722834525/a7a8942057436b37daddccdcb1418b43.jpeg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/659361279459487744/_lxfqZtJ_normal.png",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/659361279459487744/_lxfqZtJ_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/183977596/1426495494",
+            "profile_link_color": "3948A8",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "E6F6F9",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/HNZL6OvR5t",
+                    "expanded_url": "http://dlvr.it/DBbHZs",
+                    "display_url": "dlvr.it/DBbHZs",
+                    "indices": [
+                        51,
+                        74
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "ru"
+    },
+    {
+        "created_at": "Tue Jan 05 18:23:51 +0000 2016",
+        "id": 684440188861333500,
+        "id_str": "684440188861333504",
+        "text": "RT @JS_Cheerleader: Cool! Making a music video with WebGL. https://t.co/aEDiUEWxL4 #JavaScript",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 14148308,
+            "id_str": "14148308",
+            "name": "Eric Elliott",
+            "screen_name": "_ericelliott",
+            "location": "San Francisco, CA",
+            "description": "Make some magic. #JSHomes https://t.co/a4CtY2hJZa",
+            "url": "http://t.co/CZHaIyTB5L",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/CZHaIyTB5L",
+                            "expanded_url": "http://bit.ly/jshomes",
+                            "display_url": "bit.ly/jshomes",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/a4CtY2hJZa",
+                            "expanded_url": "https://ericelliottjs.com",
+                            "display_url": "ericelliottjs.com",
+                            "indices": [
+                                26,
+                                49
+                            ]
+                        }
+                    ]
+                }
+            },
+            "protected": false,
+            "followers_count": 17606,
+            "friends_count": 10916,
+            "listed_count": 1138,
+            "created_at": "Fri Mar 14 18:06:53 +0000 2008",
+            "favourites_count": 24567,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 27680,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "1A1B1F",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/464310668984725504/ym-M-SNv_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/464310668984725504/ym-M-SNv_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/14148308/1399535245",
+            "profile_link_color": "2FC2EF",
+            "profile_sidebar_border_color": "181A1E",
+            "profile_sidebar_fill_color": "252429",
+            "profile_text_color": "666666",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Tue Jan 05 05:50:05 +0000 2016",
+            "id": 684250493540024300,
+            "id_str": "684250493540024320",
+            "text": "Cool! Making a music video with WebGL. https://t.co/aEDiUEWxL4 #JavaScript",
+            "source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1464124302,
+                "id_str": "1464124302",
+                "name": "Go JS!",
+                "screen_name": "JS_Cheerleader",
+                "location": "Behind the bleachers ",
+                "description": "#JavaScript changed my life. I'm a huge fan. Looking for cool JS projects to tweet about. I always loved #geek guys and they never loved me back until now. Yay!",
+                "url": "http://t.co/1JoTcwVOo3",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/1JoTcwVOo3",
+                                "expanded_url": "http://about.me/javascriptcheerleader",
+                                "display_url": "about.me/javascriptchee…",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 4874,
+                "friends_count": 3836,
+                "listed_count": 392,
+                "created_at": "Tue May 28 08:19:36 +0000 2013",
+                "favourites_count": 7455,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 6676,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/3722564505/b8030b8f3990875e8f38ed877fdf8d25_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/3722564505/b8030b8f3990875e8f38ed877fdf8d25_normal.png",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 3,
+            "favorite_count": 13,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "JavaScript",
+                        "indices": [
+                            63,
+                            74
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/aEDiUEWxL4",
+                        "expanded_url": "https://medium.com/@superhighfives/making-a-music-video-f60757ceb4cf",
+                        "display_url": "medium.com/@superhighfive…",
+                        "indices": [
+                            39,
+                            62
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "possibly_sensitive_appealable": false,
+            "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 3,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "JavaScript",
+                    "indices": [
+                        83,
+                        94
+                    ]
+                }
+            ],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "JS_Cheerleader",
+                    "name": "Go JS!",
+                    "id": 1464124302,
+                    "id_str": "1464124302",
+                    "indices": [
+                        3,
+                        18
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/aEDiUEWxL4",
+                    "expanded_url": "https://medium.com/@superhighfives/making-a-music-video-f60757ceb4cf",
+                    "display_url": "medium.com/@superhighfive…",
+                    "indices": [
+                        59,
+                        82
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:23:44 +0000 2016",
+        "id": 684440157588713500,
+        "id_str": "684440157588713472",
+        "text": "[Перевод] Parallelism vs Concurrency: правильно подбираем инструменты - https://t.co/KRptMdbfm1",
+        "source": "<a href=\"http://ifttt.com\" rel=\"nofollow\">IFTTT</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 2831245167,
+            "id_str": "2831245167",
+            "name": "RSS-лента Хабрахабра",
+            "screen_name": "habrahabr_feed",
+            "location": "Moscow",
+            "description": "Habrahabr.ru — сообщество IT-специалистов.",
+            "url": "http://t.co/AAzQTp7cWw",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/AAzQTp7cWw",
+                            "expanded_url": "http://habrahabr.ru/",
+                            "display_url": "habrahabr.ru",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 531,
+            "friends_count": 0,
+            "listed_count": 42,
+            "created_at": "Wed Oct 15 08:19:35 +0000 2014",
+            "favourites_count": 0,
+            "utc_offset": 14400,
+            "time_zone": "Yerevan",
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 12896,
+            "lang": "ru",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/522317590962515968/8KNPzxcX_normal.png",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/522317590962515968/8KNPzxcX_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/2831245167/1413365206",
+            "profile_link_color": "78A2B7",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/KRptMdbfm1",
+                    "expanded_url": "http://ift.tt/1O3A27A",
+                    "display_url": "ift.tt/1O3A27A",
+                    "indices": [
+                        72,
+                        95
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Tue Jan 05 18:22:35 +0000 2016",
+        "id": 684439870211661800,
+        "id_str": "684439870211661825",
+        "text": "RT @ceejbot: No really, this is a good explainer. \n\nhttps://t.co/YBj1WZHsiO",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 668423,
+            "id_str": "668423",
+            "name": "Mikeal Rogers",
+            "screen_name": "mikeal",
+            "location": "San Francisco, CA",
+            "description": "Creator of NodeConf & request. Community @ Node.js Foundation. All gifs from One-Punch Man :)",
+            "url": "https://t.co/7kRL5uIWRL",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/7kRL5uIWRL",
+                            "expanded_url": "http://mikealrogers.com/",
+                            "display_url": "mikealrogers.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 13503,
+            "friends_count": 457,
+            "listed_count": 882,
+            "created_at": "Fri Jan 19 22:47:30 +0000 2007",
+            "favourites_count": 3670,
+            "utc_offset": -28800,
+            "time_zone": "Pacific Time (US & Canada)",
+            "geo_enabled": true,
+            "verified": false,
+            "statuses_count": 37163,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/549609524038877184/01oMFk1H_normal.png",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/549609524038877184/01oMFk1H_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/668423/1419820652",
+            "profile_link_color": "3B94D9",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Tue Jan 05 18:20:24 +0000 2016",
+            "id": 684439317113012200,
+            "id_str": "684439317113012224",
+            "text": "No really, this is a good explainer. \n\nhttps://t.co/YBj1WZHsiO",
+            "source": "<a href=\"http://tapbots.com/software/tweetbot/mac\" rel=\"nofollow\">Tweetbot for Mac</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 78663,
+                "id_str": "78663",
+                "name": "Secret Ceej Weapon",
+                "screen_name": "ceejbot",
+                "location": "Menlo Park, CA",
+                "description": "Ceej aka ceejbot. THE NPM SIEGE BOT. Innovative thought admiral-ship in cat-related tweeting.",
+                "url": "https://t.co/BKkuBfyOm7",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/BKkuBfyOm7",
+                                "expanded_url": "http://ceejbot.tumblr.com/",
+                                "display_url": "ceejbot.tumblr.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 2578,
+                "friends_count": 615,
+                "listed_count": 215,
+                "created_at": "Mon Dec 18 23:22:16 +0000 2006",
+                "favourites_count": 11706,
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 34133,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "CDB380",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/149122382/x59fbc11347f5afe2a4e736cd31efed2.jpg",
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/149122382/x59fbc11347f5afe2a4e736cd31efed2.jpg",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/631253658743603200/XeO_3PC7_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/631253658743603200/XeO_3PC7_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/78663/1400545557",
+                "profile_link_color": "472C04",
+                "profile_sidebar_border_color": "036564",
+                "profile_sidebar_fill_color": "E8DDCB",
+                "profile_text_color": "031634",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": {
+                "id": "ab2f2fac83aa388d",
+                "url": "https://api.twitter.com/1.1/geo/id/ab2f2fac83aa388d.json",
+                "place_type": "city",
+                "name": "Oakland",
+                "full_name": "Oakland, CA",
+                "country_code": "US",
+                "country": "United States",
+                "contained_within": [],
+                "bounding_box": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -122.34266,
+                                37.699279
+                            ],
+                            [
+                                -122.114711,
+                                37.699279
+                            ],
+                            [
+                                -122.114711,
+                                37.8847092
+                            ],
+                            [
+                                -122.34266,
+                                37.8847092
+                            ]
+                        ]
+                    ]
+                },
+                "attributes": {}
+            },
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 1,
+            "favorite_count": 0,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/YBj1WZHsiO",
+                        "expanded_url": "http://www.theonion.com/graphic/what-you-need-know-about-oregon-militia-standoff-52111",
+                        "display_url": "theonion.com/graphic/what-y…",
+                        "indices": [
+                            39,
+                            62
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "possibly_sensitive_appealable": false,
+            "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "ceejbot",
+                    "name": "Secret Ceej Weapon",
+                    "id": 78663,
+                    "id_str": "78663",
+                    "indices": [
+                        3,
+                        11
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/YBj1WZHsiO",
+                    "expanded_url": "http://www.theonion.com/graphic/what-you-need-know-about-oregon-militia-standoff-52111",
+                    "display_url": "theonion.com/graphic/what-y…",
+                    "indices": [
+                        52,
+                        75
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:19:25 +0000 2016",
+        "id": 684439070286544900,
+        "id_str": "684439070286544896",
+        "text": "Confidence in Congress is at historic lows. Why would any politician pull the \"this should be left to Congress\" card?",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 668423,
+            "id_str": "668423",
+            "name": "Mikeal Rogers",
+            "screen_name": "mikeal",
+            "location": "San Francisco, CA",
+            "description": "Creator of NodeConf & request. Community @ Node.js Foundation. All gifs from One-Punch Man :)",
+            "url": "https://t.co/7kRL5uIWRL",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/7kRL5uIWRL",
+                            "expanded_url": "http://mikealrogers.com/",
+                            "display_url": "mikealrogers.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 13503,
+            "friends_count": 457,
+            "listed_count": 882,
+            "created_at": "Fri Jan 19 22:47:30 +0000 2007",
+            "favourites_count": 3670,
+            "utc_offset": -28800,
+            "time_zone": "Pacific Time (US & Canada)",
+            "geo_enabled": true,
+            "verified": false,
+            "statuses_count": 37163,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/549609524038877184/01oMFk1H_normal.png",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/549609524038877184/01oMFk1H_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/668423/1419820652",
+            "profile_link_color": "3B94D9",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": {
+            "id": "5a110d312052166f",
+            "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json",
+            "place_type": "city",
+            "name": "San Francisco",
+            "full_name": "San Francisco, CA",
+            "country_code": "US",
+            "country": "United States",
+            "contained_within": [],
+            "bounding_box": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -122.514926,
+                            37.708075
+                        ],
+                        [
+                            -122.357031,
+                            37.708075
+                        ],
+                        [
+                            -122.357031,
+                            37.833238
+                        ],
+                        [
+                            -122.514926,
+                            37.833238
+                        ]
+                    ]
+                ]
+            },
+            "attributes": {}
+        },
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:18:42 +0000 2016",
+        "id": 684438891269636100,
+        "id_str": "684438891269636096",
+        "text": "RT @nativescript: Ever wondered what is supported in NativeScript? We have an article for you - https://t.co/mkLYg9DVuO  #NativeMobile #Jav…",
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 1589691,
+            "id_str": "1589691",
+            "name": "Rey Bango",
+            "screen_name": "reybango",
+            "location": "South Florida",
+            "description": "I love the Web. Microsoft Developer Advocate for web developers and Microsoft Edge. Contributing Editor to Smashing Mag. Honey badger. Opinions are mine.",
+            "url": "http://t.co/c3aTBfhwPZ",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/c3aTBfhwPZ",
+                            "expanded_url": "http://blog.reybango.com",
+                            "display_url": "blog.reybango.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 16615,
+            "friends_count": 2931,
+            "listed_count": 1423,
+            "created_at": "Tue Mar 20 04:53:58 +0000 2007",
+            "favourites_count": 1196,
+            "utc_offset": -18000,
+            "time_zone": "Eastern Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 39729,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_tile": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1589691/1361894775",
+            "profile_link_color": "0000FF",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Tue Jan 05 17:49:06 +0000 2016",
+            "id": 684431442516967400,
+            "id_str": "684431442516967424",
+            "text": "We have an article for you - https://t.co/mkLYg9DVuO  #NativeMobile #JavaScript",
+            "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2737534982,
+                "id_str": "2737534982",
+                "name": "NativeScript",
+                "screen_name": "nativescript",
+                "location": "",
+                "description": "Open Source framework for building cross-platform truly native iOS and Android mobile apps using JavaScript.",
+                "url": "http://t.co/Nuz9fYuJO5",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/Nuz9fYuJO5",
+                                "expanded_url": "http://nativescript.org",
+                                "display_url": "nativescript.org",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 3489,
+                "friends_count": 604,
+                "listed_count": 138,
+                "created_at": "Sat Aug 16 16:02:50 +0000 2014",
+                "favourites_count": 442,
+                "utc_offset": -18000,
+                "time_zone": "Eastern Time (US & Canada)",
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 1140,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/555458943149821952/_fBe-iYT_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/555458943149821952/_fBe-iYT_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2737534982/1421267099",
+                "profile_link_color": "4060FA",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 4,
+            "favorite_count": 2,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "NativeMobile",
+                        "indices": [
+                            103,
+                            116
+                        ]
+                    },
+                    {
+                        "text": "JavaScript",
+                        "indices": [
+                            117,
+                            128
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/mkLYg9DVuO",
+                        "expanded_url": "https://www.nativescript.org/allfeatures",
+                        "display_url": "nativescript.org/allfeatures",
+                        "indices": [
+                            78,
+                            101
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "possibly_sensitive_appealable": false,
+            "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 4,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "NativeMobile",
+                    "indices": [
+                        121,
+                        134
+                    ]
+                },
+                {
+                    "text": "JavaScript",
+                    "indices": [
+                        135,
+                        140
+                    ]
+                }
+            ],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "nativescript",
+                    "name": "NativeScript",
+                    "id": 2737534982,
+                    "id_str": "2737534982",
+                    "indices": [
+                        3,
+                        16
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/mkLYg9DVuO",
+                    "expanded_url": "https://www.nativescript.org/allfeatures",
+                    "display_url": "nativescript.org/allfeatures",
+                    "indices": [
+                        96,
+                        119
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "possibly_sensitive_appealable": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:18:03 +0000 2016",
+        "id": 684438726135668700,
+        "id_str": "684438726135668736",
+        "text": "@mikeal you seem to want politics to make sense. The fact that we have an electoral college deciding winners should tell you it's magic.",
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 684437539625779200,
+        "in_reply_to_status_id_str": "684437539625779201",
+        "in_reply_to_user_id": 668423,
+        "in_reply_to_user_id_str": "668423",
+        "in_reply_to_screen_name": "mikeal",
+        "user": {
+            "id": 1589691,
+            "id_str": "1589691",
+            "name": "Rey Bango",
+            "screen_name": "reybango",
+            "location": "South Florida",
+            "description": "I love the Web. Microsoft Developer Advocate for web developers and Microsoft Edge. Contributing Editor to Smashing Mag. Honey badger. Opinions are mine.",
+            "url": "http://t.co/c3aTBfhwPZ",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/c3aTBfhwPZ",
+                            "expanded_url": "http://blog.reybango.com",
+                            "display_url": "blog.reybango.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 16615,
+            "friends_count": 2931,
+            "listed_count": 1423,
+            "created_at": "Tue Mar 20 04:53:58 +0000 2007",
+            "favourites_count": 1196,
+            "utc_offset": -18000,
+            "time_zone": "Eastern Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 39729,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_tile": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1589691/1361894775",
+            "profile_link_color": "0000FF",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "mikeal",
+                    "name": "Mikeal Rogers",
+                    "id": 668423,
+                    "id_str": "668423",
+                    "indices": [
+                        0,
+                        7
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:17:13 +0000 2016",
+        "id": 684438518584754200,
+        "id_str": "684438518584754177",
+        "text": "@mattpodwysocki @jashkenas make it worth the effort.",
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 684438482081722400,
+        "in_reply_to_status_id_str": "684438482081722368",
+        "in_reply_to_user_id": 1589691,
+        "in_reply_to_user_id_str": "1589691",
+        "in_reply_to_screen_name": "reybango",
+        "user": {
+            "id": 1589691,
+            "id_str": "1589691",
+            "name": "Rey Bango",
+            "screen_name": "reybango",
+            "location": "South Florida",
+            "description": "I love the Web. Microsoft Developer Advocate for web developers and Microsoft Edge. Contributing Editor to Smashing Mag. Honey badger. Opinions are mine.",
+            "url": "http://t.co/c3aTBfhwPZ",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/c3aTBfhwPZ",
+                            "expanded_url": "http://blog.reybango.com",
+                            "display_url": "blog.reybango.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 16615,
+            "friends_count": 2931,
+            "listed_count": 1423,
+            "created_at": "Tue Mar 20 04:53:58 +0000 2007",
+            "favourites_count": 1196,
+            "utc_offset": -18000,
+            "time_zone": "Eastern Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 39729,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_tile": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1589691/1361894775",
+            "profile_link_color": "0000FF",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "mattpodwysocki",
+                    "name": "λ Calrissian",
+                    "id": 12699642,
+                    "id_str": "12699642",
+                    "indices": [
+                        0,
+                        15
+                    ]
+                },
+                {
+                    "screen_name": "jashkenas",
+                    "name": "Jeremy Ashkenas",
+                    "id": 123323498,
+                    "id_str": "123323498",
+                    "indices": [
+                        16,
+                        26
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jan 05 18:17:05 +0000 2016",
+        "id": 684438482081722400,
+        "id_str": "684438482081722368",
+        "text": "@mattpodwysocki @jashkenas yep plenty of people who seem to lose their filters on the interwebs but the ones that truly are grateful...",
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 684437017258688500,
+        "in_reply_to_status_id_str": "684437017258688512",
+        "in_reply_to_user_id": 12699642,
+        "in_reply_to_user_id_str": "12699642",
+        "in_reply_to_screen_name": "mattpodwysocki",
+        "user": {
+            "id": 1589691,
+            "id_str": "1589691",
+            "name": "Rey Bango",
+            "screen_name": "reybango",
+            "location": "South Florida",
+            "description": "I love the Web. Microsoft Developer Advocate for web developers and Microsoft Edge. Contributing Editor to Smashing Mag. Honey badger. Opinions are mine.",
+            "url": "http://t.co/c3aTBfhwPZ",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/c3aTBfhwPZ",
+                            "expanded_url": "http://blog.reybango.com",
+                            "display_url": "blog.reybango.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 16615,
+            "friends_count": 2931,
+            "listed_count": 1423,
+            "created_at": "Tue Mar 20 04:53:58 +0000 2007",
+            "favourites_count": 1196,
+            "utc_offset": -18000,
+            "time_zone": "Eastern Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 39729,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "9AE4E8",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/2318620/wwf2ww0.jpg",
+            "profile_background_tile": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1589691/1361894775",
+            "profile_link_color": "0000FF",
+            "profile_sidebar_border_color": "87BC44",
+            "profile_sidebar_fill_color": "E0FF92",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": true,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "mattpodwysocki",
+                    "name": "λ Calrissian",
+                    "id": 12699642,
+                    "id_str": "12699642",
+                    "indices": [
+                        0,
+                        15
+                    ]
+                },
+                {
+                    "screen_name": "jashkenas",
+                    "name": "Jeremy Ashkenas",
+                    "id": 123323498,
+                    "id_str": "123323498",
+                    "indices": [
+                        16,
+                        26
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    }
+]
