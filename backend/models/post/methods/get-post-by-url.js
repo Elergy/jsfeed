@@ -1,10 +1,12 @@
-import PostModel from './../model';
+let PostModel = require('./../post-model');
 
 /**
  * get post with specified url
  * @param {String} url
  * @returns {Promise}
  */
-export default function getPostByUrl(url) {
+function getPostByUrl(url) {
     return PostModel.findOne({url});
 }
+
+module.exports = getPostByUrl;

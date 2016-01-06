@@ -1,6 +1,6 @@
 let assert = require('assert');
 
-import TweetModel from './model';
+let TweetModel = require('./tweet-model');
 
 const TOO_LONG_AGO_DATE = new Date(2005, 1, 1);
 
@@ -74,8 +74,25 @@ function updateCounts(id, likesCount=0, retweetCount=0) {
     });
 }
 
-export {
+/**
+ * get maximum tweet id
+ * @returns {Promise<number>}
+ */
+function getMaxTweetId() {
+    return TweetModel
+        .find({}, {_id: 1})
+        .sort({_id: -1})
+        .limit(1)
+        .then((items) => {
+            if (items && items.length) {
+                return items[0]._id;
+            }
+        });
+}
+
+module.exports = {
     create,
     remove,
-    updateCounts
+    updateCounts,
+    getMaxTweetId
 };

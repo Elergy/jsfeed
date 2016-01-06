@@ -1,6 +1,6 @@
 let {Schema} = require('mongoose');
 
-export default new Schema({
+module.exports = new Schema({
     _id: Number,
     text: String,
     userName: String,

@@ -1,13 +1,10 @@
 let {expect} = require('chai');
 let sinon = require('sinon');
 let {Schema: {ObjectId}} = require('mongoose');
-import initConnection from './../common/init-connection';
+let initConnection = require('./../common/init-connection');
 
-import {
-    create as createPost,
-    publish as publishPost
-} from './../../../backend/models/post';
-import PostModel from './../../../backend/models/post/model';
+let {create: createPost, publish: publishPost} = require('./../../../backend/models/post');
+let PostModel = require('./../../../backend/models/post/post-model');
 
 describe('post', () => {
     initConnection();

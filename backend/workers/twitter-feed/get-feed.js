@@ -37,5 +37,4 @@ function getFeed(sinceId, count=200) {
     });
 }
 
-export default getFeed;
-
+module.exports = getFeed;

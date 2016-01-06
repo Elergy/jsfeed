@@ -1,4 +1,4 @@
-import create from './methods/create';
-import publish from './methods/publish';
+let create = require('./methods/create');
+let publish = require('./methods/publish');
 
 export {create, publish};

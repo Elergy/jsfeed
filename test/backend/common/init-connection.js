@@ -36,4 +36,4 @@ function initConnection() {
     });
 }
 
-export default initConnection;
+module.exports = initConnection;

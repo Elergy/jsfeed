@@ -1,12 +1,13 @@
 let {expect} = require('chai');
-import initConnection from '../common/init-connection';
+let initConnection = require('../common/init-connection');
 
-import {
-    create as createTweet,
-    remove as removeTweets,
-    updateCounts
-} from './../../../backend/models/tweet';
-import TweetModel from './../../../backend/models/tweet/model';
+let {
+    create: createTweet,
+    remove: removeTweets,
+    updateCounts,
+    getMaxTweetId
+} = require('./../../../backend/models/tweet');
+let TweetModel = require('./../../../backend/models/tweet/tweet-model');
 
 describe('tweet', () => {
     initConnection();
@@ -157,6 +158,17 @@ describe('tweet', () => {
                 likesCount: 222,
                 retweetCount: 1
             });
+        });
+    });
+
+    describe('get max tweet id', () => {
+        it('should return maximum tweet id', async () => {
+            await createTweet(99999, 'to-get-max', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(899999, 'to-get-max', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(799999, 'to-get-max', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+
+            let maxTweetId = await getMaxTweetId();
+            expect(maxTweetId).to.equal(899999);
         });
     });
 });

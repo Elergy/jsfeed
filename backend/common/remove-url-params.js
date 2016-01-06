@@ -7,7 +7,7 @@ const lastSlashRe = /\/$/;
  * @param {String} postUrl
  * @returns {String, null}
  */
-export default function removeUrlParams(postUrl) {
+function removeUrlParams(postUrl) {
     let parsedUrl = url.parse(postUrl, true);
 
     if (!parsedUrl.protocol || !parsedUrl.host) {
@@ -27,3 +27,5 @@ export default function removeUrlParams(postUrl) {
         .format(parsedUrl)
         .replace(lastSlashRe, '');
 }
+
+module.exports = removeUrlParams;

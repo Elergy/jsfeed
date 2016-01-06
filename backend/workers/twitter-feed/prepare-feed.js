@@ -2,7 +2,7 @@ let assert = require('assert');
 let unshortener = require('unshortener');
 let urlParser = require('url');
 
-import removeUrlParams from './../../common/remove-url-params';
+let removeUrlParams = require('./../../common/remove-url-params');
 
 /**
  * unshort url
@@ -70,6 +70,8 @@ function prepareFeed(feed) {
                         text: tweet.text,
                         userName: tweet.user.name,
                         userLogin: '@' + tweet.user.screen_name,
+                        retweetCount: tweet.retweet_count,
+                        likesCount: tweet.favorite_count,
                         urls: urls
                     };
                 });
@@ -78,4 +80,4 @@ function prepareFeed(feed) {
     return Promise.all(feedPromises);
 }
 
-export default prepareFeed;
+module.exports = prepareFeed;

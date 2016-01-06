@@ -1,6 +1,6 @@
 let assert = require('assert');
 
-import PostModel from './../model';
+let PostModel = require('./../post-model');
 
 /**
  * Publish post
@@ -10,7 +10,7 @@ import PostModel from './../model';
  * @param {String} postDateString
  * @param {String[]} tags
  */
-export default async function publish(id, title, description, postDateString, tags) {
+async function publish(id, title, description, postDateString, tags) {
     assert(title, 'title is not defined');
     assert(description, 'description is not defined');
     assert(postDateString, 'postDate is not defined');
@@ -36,3 +36,5 @@ export default async function publish(id, title, description, postDateString, ta
         throw new Error('post is not found');
     }
 }
+
+module.exports = publish;

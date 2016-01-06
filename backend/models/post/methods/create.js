@@ -1,8 +1,8 @@
 let assert = require('assert');
 
-import removeUrlParams from './../../../common/remove-url-params';
-import getPostByUrl from './get-post-by-url';
-import PostModel from './../model';
+let removeUrlParams = require('./../../../common/remove-url-params');
+let getPostByUrl = require('./get-post-by-url');
+let PostModel = require('./../post-model');
 
 /**
  * Create new post if post with this url doesn't exist yet.
@@ -11,7 +11,7 @@ import PostModel from './../model';
  * @param {Number} tweetId
  * @returns {Promise}
  */
-export default async function create(url, tweetId) {
+async function create(url, tweetId) {
     url = removeUrlParams(url);
     assert.equal(typeof tweetId, 'number', 'tweetId is not a number');
     assert.equal(typeof url, 'string', 'url is not a string');
@@ -32,3 +32,5 @@ export default async function create(url, tweetId) {
 
     return post.save();
 }
+
+module.exports = create;

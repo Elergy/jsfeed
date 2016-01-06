@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
-import tweetSchema from './schema';
+let tweetSchema = require('./tweet-schema');
 
 let TweetModel = mongoose.model('Tweet', tweetSchema);
 
-export default TweetModel;
+module.exports = TweetModel;
