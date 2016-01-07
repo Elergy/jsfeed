@@ -1,3 +1,5 @@
+require('node-env-file')('./.env');
+
 /**
  * New Relic agent configuration.
  *
