@@ -1,6 +1,5 @@
 'use strict';
-let env = require('node-env-file');
-env('./.env');
+require('node-env-file')('./.env');
 let newrelic = require('newrelic');
 
 require('babel-register', {
