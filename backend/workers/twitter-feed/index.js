@@ -13,8 +13,8 @@ async function loadFeedAndSave() {
 
     try {
         let maxTweetId = await getMaxTweetId();
-        feed = await getFeed();
-        feed = prepareFeed(feed);
+        feed = await getFeed(maxTweetId);
+        feed = await prepareFeed(feed);
     } catch(ex) {
         newrelic.noticeError(ex);
         return;

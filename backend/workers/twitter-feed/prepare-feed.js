@@ -1,6 +1,7 @@
 let assert = require('assert');
 let unshortener = require('unshortener');
 let urlParser = require('url');
+let newrelic = require('newrelic');
 
 let removeUrlParams = require('./../../common/remove-url-params');
 
@@ -10,14 +11,15 @@ let removeUrlParams = require('./../../common/remove-url-params');
  * @returns {Promise}
  */
 function unshortUrl(url) {
-    return new Promise((resolve, reject) => {
-        unshortener.expand(url, (err, url) => {
+    return new Promise((resolve) => {
+        unshortener.expand(url, (err, resolvedUrl) => {
             if (err) {
-                reject(err);
+                newrelic.noticeError(err);
+                resolve(url);
                 return;
             }
 
-            resolve(urlParser.format(url));
+            resolve(urlParser.format(resolvedUrl));
         });
     });
 }

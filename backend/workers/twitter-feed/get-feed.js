@@ -12,22 +12,26 @@ const TIMELINE_URL = '/statuses/home_timeline';
 /**
  * get twitter feed for main account
  * @param {Number} [sinceId]
- * @param {Number} [count=200]
+ * @param {Number} [count=50]
  * @returns {Promise}
  */
-function getFeed(sinceId, count=200) {
+function getFeed(sinceId, count=50) {
     let params = {
         count,
         include_entities: true
     };
 
     if (sinceId) {
-        params.sinceId = sinceId;
+        params.since_id = sinceId;
+        console.log(params);
     }
 
     return new Promise((resolve, reject) => {
         twitterClient.get(TIMELINE_URL, params, (error, tweets) => {
             if (error) {
+                if (Array.isArray(error)) {
+                    error = error[0];
+                }
                 reject(error);
                 return;
             }
