@@ -14,7 +14,7 @@ let config = {
         },
 
         server: {
-            host: '127.0.0.1',
+            host: process.env.host,
             port: process.env.port
         },
 
