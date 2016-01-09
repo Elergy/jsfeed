@@ -11,17 +11,21 @@ require('babel-polyfill');
 let express = require('express');
 let http = require('http');
 let path = require('path');
-var cookieParser = require('cookie-parser');
+let cookieParser = require('cookie-parser');
+let bodyParser = require('body-parser');
 
 let connectToMongo = require('./connect-to-mongo');
-let PostModel = require('./models/post/post-model');
 let twitterFeedWorker = require('./workers/twitter-feed');
+let routes = require('./routes');
 
 connectToMongo().then(() => twitterFeedWorker.start(), (err) => newrelic.noticeError(err));
 
 let app = express();
 app.set('port', process.env.port || 8080);
 app.use(cookieParser());
+app.set('view engine', 'jade');
+app.set('views', path.join(__dirname, 'views'));
+app.use(bodyParser());
 
 app.all('/jsfeed/*', (req, res, next) => {
     let userName = req.cookies.user_name;
@@ -35,25 +39,20 @@ app.all('/jsfeed/*', (req, res, next) => {
     }
 });
 
+app.get('/jsfeed/post', routes.getPost);
+app.post('/jsfeed/publish', routes.publishPost, (req, res) => {
+    res.redirect(301, '/jsfeed/post');
+});
+app.post('/jsfeed/blacklist', routes.blacklistPost, (req, res) => {
+    res.redirect(301, '/jsfeed/post');
+});
+
 function errorHandler(err, req, res, next) {
     newrelic.noticeError(err);
     res.json({
         error: err.message
     });
 }
-
-app.get('/jsfeed/all-posts', (req, res) => {
-    PostModel.find({})
-        .then((allPosts) => {
-            return PostModel.populate(allPosts, {path: 'tweets'});
-        })
-        .then((allPosts) => {
-            return allPosts.map((post) => post.toJSON());
-        })
-        .then((allPosts) => {
-            res.json(allPosts);
-        });
-}, errorHandler);
 
 var ghost = require('ghost');
 ghost({

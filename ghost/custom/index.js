@@ -1,1 +1,1 @@
-require('./link-theme');
+require('./jsfeed-item');

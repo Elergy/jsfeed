@@ -1,0 +1,19 @@
+extends layout
+block content
+    div.post
+        each tweet in post.tweets
+            div.tweet
+                span.tweet_username!=tweet.userName
+                span.tweet_text!=tweet.text
+        div.post
+            a.post_url(href=post.url,target='_blank')!=post.url
+        textarea.post_template <!-- post {"url": "#{post.url}", "author": "", "date": ""} post -->
+        form(action='/jsfeed/publish',method='POST')
+            input(type='hidden',name='id',value=post._id)
+            button(type='submit') Publish
+        form(action='/jsfeed/blacklist',method='POST')
+            input(type='hidden',name='id',value=post._id)
+            button(type='submit') Blacklist
+
+
+

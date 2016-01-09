@@ -4,13 +4,13 @@ let PostModel = require('./../post-model');
  * Publish post
  * @param {ObjectId} id
  */
-async function publish(id) {
+async function blacklist(id) {
     let post = await PostModel.findById(id);
 
     if (post) {
         post = Object.assign(post, {
-            blacklisted: false,
-            published: true
+            blacklisted: true,
+            published: false
         });
 
         return post.save();
@@ -19,4 +19,4 @@ async function publish(id) {
     }
 }
 
-module.exports = publish;
+module.exports = blacklist;

@@ -1,0 +1,5 @@
+.tweet {display:block; margin-bottom:10px}
+.tweet .tweet_username {display: block; font-weight: 800}
+
+.post {display: block}
+.post_template {width: 600px; height: 70px;}

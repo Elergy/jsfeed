@@ -46,8 +46,6 @@ describe('post', () => {
                 url,
                 published: false,
                 blacklisted: false,
-                grabDate,
-                tags: [],
                 tweets: [123]
             });
 
@@ -66,65 +64,8 @@ describe('post', () => {
                 url,
                 published: false,
                 blacklisted: false,
-                grabDate: new Date(2012, 6, 6),
-                tags: [],
                 tweets: [123, 12345]
             });
-        });
-    });
-
-    describe('publish', () => {
-        it('should not publish post if it does not exist', async () => {
-            let exception;
-            try {
-                await publishPost(
-                    ObjectId(),
-                    'title',
-                    'description',
-                    new Date(2012, 6, 6).toString(),
-                    ['js', 'react']
-                );
-            } catch(ex) {
-                exception = ex;
-            }
-
-            expect(exception.message).to.equal('post is not found');
-        });
-
-        it('should publish post', async () => {
-            const url = 'http://elergy.ru/publish-test-url';
-            const grabDate = new Date(2014, 8, 9);
-            const postDate = new Date(2012, 6, 6);
-
-            sinon.stub(Date, 'now').returns(grabDate.getTime());
-
-            let post = await createPost(url, 7899);
-            await publishPost(
-                post._id,
-                'publish title',
-                'description',
-                postDate.toString(),
-                ['js', 'react']
-            );
-
-            let publishedPost = await PostModel.findOne({url});
-            publishedPost = publishedPost.toJSON();
-            delete publishedPost._id;
-            delete publishedPost.__v;
-
-            expect(publishedPost).to.deep.equal({
-                url,
-                title: 'publish title',
-                description: 'description',
-                postDate: postDate,
-                grabDate: grabDate,
-                published: true,
-                blacklisted: false,
-                tags: ['js', 'react'],
-                tweets: [7899]
-            });
-
-            Date.now.restore();
         });
     });
 });
