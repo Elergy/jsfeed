@@ -955,7 +955,8 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-    text-decoration: none;
+    font-size: 0.8em;
+    float: right;
 }
 
 .post-meta {
