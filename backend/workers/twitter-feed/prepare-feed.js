@@ -75,10 +75,10 @@ function prepareFeed(feed) {
     let feedPromises = feed
         .map((tweet) => {
             let urls = tweet.entities.urls.map((urlObject) => urlObject.url);
-            urls = urls.map((url) => url.toLowerCase());
 
             return prepareUrls(urls)
                 .then((urls) => {
+                    urls = urls.map((url) => url.toLowerCase());
                     urls = urls.filter(filterBlacklistUrl);
 
                     if (urls.length) {
