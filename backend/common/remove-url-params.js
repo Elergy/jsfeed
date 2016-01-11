@@ -18,7 +18,7 @@ function removeUrlParams(postUrl) {
     delete parsedUrl.search;
 
     Object.keys(parsedUrl.query).forEach((queryName) => {
-        if (queryName.indexOf('utm') === 0) {
+        if (queryName.indexOf('utm') === 0 || queryName.indexOf('_') === 0) {
             delete parsedUrl.query[queryName];
         }
     });

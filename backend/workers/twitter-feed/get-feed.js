@@ -23,7 +23,6 @@ function getFeed(sinceId, count=50) {
 
     if (sinceId) {
         params.since_id = sinceId;
-        console.log(params);
     }
 
     return new Promise((resolve, reject) => {

@@ -5,17 +5,29 @@ let newrelic = require('newrelic');
 
 let removeUrlParams = require('./../../common/remove-url-params');
 
+const urlBlacklist = require('./url-blacklist');
+
+/**
+ * return true if url doesn't match to some of blacklisted patterns
+ * @param {String} url
+ * @returns {boolean}
+ */
+function filterBlacklistUrl(url) {
+    return !urlBlacklist.some((blacklistedRe) => blacklistedRe.test(url));
+}
+
 /**
  * unshort url
  * @param {String} url
  * @returns {Promise}
  */
 function unshortUrl(url) {
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
         unshortener.expand(url, (err, resolvedUrl) => {
             if (err) {
+                console.log(err);
                 newrelic.noticeError(err);
-                resolve(url);
+                reject(err);
                 return;
             }
 
@@ -67,20 +79,24 @@ function prepareFeed(feed) {
 
             return prepareUrls(urls)
                 .then((urls) => {
-                    return {
-                        id: tweet.id,
-                        createDate: tweet.created_at,
-                        text: tweet.text,
-                        userName: tweet.user.name,
-                        userLogin: '@' + tweet.user.screen_name,
-                        retweetCount: tweet.retweet_count,
-                        likesCount: tweet.favorite_count,
-                        urls: urls
-                    };
+                    urls = urls.filter(filterBlacklistUrl);
+
+                    if (urls.length) {
+                        return {
+                            id: tweet.id,
+                            createDate: tweet.created_at,
+                            text: tweet.text,
+                            userName: tweet.user.name,
+                            userLogin: '@' + tweet.user.screen_name,
+                            retweetCount: tweet.retweet_count,
+                            likesCount: tweet.favorite_count,
+                            urls: urls
+                        };
+                    }
                 });
         });
 
-    return Promise.all(feedPromises);
+    return Promise.all(feedPromises).then((tweets) => tweets.filter((tweet) => tweet));
 }
 
 module.exports = prepareFeed;
