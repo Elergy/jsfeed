@@ -954,6 +954,10 @@ body:not(.post-template) .post-title {
     line-height: 1.7em;
 }
 
+.post-excerpt p img {
+    max-width: 100%;
+}
+
 .read-more {
     font-size: 0.8em;
     float: right;
@@ -1865,10 +1869,6 @@ body:not(.post-template) .post-title {
 
     .post-excerpt p {
         font-size: 0.85em;
-    }
-
-    .post-excerpt p img {
-        max-width: 100%;
     }
 
     .page-description {
