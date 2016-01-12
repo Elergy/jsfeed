@@ -1,4 +1,4 @@
-let {getPost} = require('./../models/post');
+let {getPost, getCount} = require('./../models/post');
 
 /**
  * Get one post to publish or to blacklist
@@ -6,9 +6,12 @@ let {getPost} = require('./../models/post');
  * @param res
  */
 async function getPostMiddleware(req, res) {
-    let post = await getPost();
-
-    res.render('get-post', {post});
+    let count = await getCount();
+    let post;
+    if (count) {
+        post = await getPost();
+    }
+    res.render('get-post', {post, count});
 }
 
 module.exports = getPostMiddleware;
