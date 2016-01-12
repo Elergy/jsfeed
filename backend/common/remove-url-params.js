@@ -8,6 +8,9 @@ const lastSlashRe = /\/$/;
  * @returns {String, null}
  */
 function removeUrlParams(postUrl) {
+    if (!postUrl) {
+        return null;
+    }
     let parsedUrl = url.parse(postUrl, true);
 
     if (!parsedUrl.protocol || !parsedUrl.host) {
