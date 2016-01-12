@@ -27,7 +27,7 @@ function unshortUrl(url) {
             if (err) {
                 console.log(err);
                 newrelic.noticeError(err);
-                reject(err);
+                resolve(null);
                 return;
             }
 
@@ -78,6 +78,7 @@ function prepareFeed(feed) {
 
             return prepareUrls(urls)
                 .then((urls) => {
+                    urls = urls.filter((url) => url);
                     urls = urls.map((url) => url.toLowerCase());
                     urls = urls.filter(filterBlacklistUrl);
 
