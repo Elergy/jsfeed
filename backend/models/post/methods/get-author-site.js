@@ -14,7 +14,7 @@ function getAuthorSite(url) {
     url = urlParser.parse(url);
     const hasUserName = sitesWithUsername.indexOf(url.host) !== -1;
 
-    let authorSite = url.protocol + '://' + url.host;
+    let authorSite = url.host;
 
     if (hasUserName && url.path && url.path.length > 1) {
         authorSite += '/' + url.path.split('/')[1];
