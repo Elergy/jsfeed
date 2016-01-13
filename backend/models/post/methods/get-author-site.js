@@ -11,7 +11,7 @@ const sitesWithUsername = [
  * @returns {String}
  */
 function getAuthorSite(url) {
-    url = urlParser(url);
+    url = urlParser.parse(url);
     const hasUserName = sitesWithUsername.indexOf(url.host) !== -1;
 
     let authorSite = url.protocol + '://' + url.host;
