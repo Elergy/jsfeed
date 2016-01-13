@@ -1,4 +1,4 @@
-let {getPost, getCount} = require('./../models/post');
+let {getPost, getCount, getAuthorSite} = require('./../models/post');
 
 /**
  * Get one post to publish or to blacklist
@@ -10,6 +10,7 @@ async function getPostMiddleware(req, res) {
     let post;
     if (count) {
         post = await getPost();
+        post.author = getAuthorSite(post.url);
     }
     res.render('get-post', {post, count});
 }

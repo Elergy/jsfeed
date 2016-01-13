@@ -9,7 +9,7 @@ block content
                     span.tweet_text!=tweet.text
             div.post
                 a.post_url(href=post.url,target='_blank')!=post.url
-            textarea.post_template <!-- post {"url": "#{post.url}", "author": "", "date": ""} post -->
+            textarea.post_template <!-- post {"url": "#{post.url}", "author": "#{post.author}", "date": ""} post -->
             form(action='/jsfeed/publish',method='POST')
                 input(type='hidden',name='id',value=post._id)
                 button(type='submit') Publish
