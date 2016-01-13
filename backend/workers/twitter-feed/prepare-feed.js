@@ -79,7 +79,7 @@ function prepareFeed(feed) {
             return prepareUrls(urls)
                 .then((urls) => {
                     urls = urls.filter((url) => url);
-                    urls = urls.map((url) => url.toLowerCase());
+                  //  urls = urls.map((url) => url.toLowerCase());
                     urls = urls.filter(filterBlacklistUrl);
 
                     if (urls.length) {
