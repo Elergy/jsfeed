@@ -32,8 +32,7 @@ app.all('/jsfeed/*', (req, res, next) => {
     let userPass = req.cookies.user_pass;
 
     if (userName !== process.env.username || userPass !== process.env.pass) {
-        res.writeHead(401, 'Access error', {'Content-Type': 'text/plain'});
-        res.end('Invalid credentials');
+        res.redirect(301, '/');
     } else {
         next();
     }
