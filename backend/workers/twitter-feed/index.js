@@ -1,6 +1,6 @@
 let newrelic = require('newrelic');
 
-let getFeed = require('./get-feed');
+let {getTwitterFeed} = require('./../twitter-client');
 let prepareFeed = require('./prepare-feed');
 let saveFeed = require('./save-feed');
 let {getMaxTweetId} = require('./../../../backend/models/tweet');
@@ -13,7 +13,7 @@ async function loadFeedAndSave() {
 
     try {
         let maxTweetId = await getMaxTweetId();
-        feed = await getFeed(maxTweetId);
+        feed = await getTwitterFeed(maxTweetId);
         feed = await prepareFeed(feed);
     } catch(ex) {
         newrelic.noticeError(ex);

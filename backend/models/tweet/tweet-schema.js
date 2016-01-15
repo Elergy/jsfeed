@@ -7,5 +7,6 @@ module.exports = new Schema({
     userLogin: String,
     retweetCount: {type: Number, default: 0},
     likesCount: {type: Number, default: 0},
-    createDate: Date
+    createDate: Date,
+    updateDate: Date
 });

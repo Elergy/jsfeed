@@ -90,9 +90,24 @@ function getMaxTweetId() {
         });
 }
 
+/**
+ * get one tweet with earliest updateDate
+ * @returns {Promise<Object>}
+ */
+function getFirstUpdatedTweet() {
+    return TweetModel.findOneAndUpdate({}, {
+        $set: {
+            updateDate: Date.now()
+        }
+    }, {
+        sort: {updateDate: 1}
+    });
+}
+
 module.exports = {
     create,
     remove,
     updateCounts,
-    getMaxTweetId
+    getMaxTweetId,
+    getFirstUpdatedTweet
 };

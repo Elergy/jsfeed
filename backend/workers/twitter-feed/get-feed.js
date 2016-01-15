@@ -1,14 +1,3 @@
-let Twitter = require('twitter');
-
-let twitterClient = new Twitter({
-    consumer_key: process.env.twitter_api_key,
-    consumer_secret: process.env.twitter_api_secret,
-    access_token_key: process.env.twitter_access_token,
-    access_token_secret: process.env.twitter_access_token_secret
-});
-
-const TIMELINE_URL = '/statuses/home_timeline';
-
 /**
  * get twitter feed for main account
  * @param {Number} [sinceId]
