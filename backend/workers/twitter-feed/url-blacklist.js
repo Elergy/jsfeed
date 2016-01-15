@@ -1,3 +1,4 @@
 module.exports = [
-    /twitter\.com\/[^\/]+?\/status/
+    /twitter\.com\/[^\/]+?\/status/,
+    /imgur\.com/
 ];
