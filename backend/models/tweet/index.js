@@ -92,16 +92,20 @@ function getMaxTweetId() {
 
 /**
  * get one tweet with earliest updateDate
- * @returns {Promise<Object>}
+ * @returns {Object}
  */
-function getFirstUpdatedTweet() {
-    return TweetModel.findOneAndUpdate({}, {
+async function getFirstUpdatedTweet() {
+    let tweet = await TweetModel.findOneAndUpdate({}, {
         $set: {
-            updateDate: Date.now()
+            updateDate: new Date(Date.now())
         }
     }, {
         sort: {updateDate: 1}
     });
+    if (tweet) {
+        tweet = tweet.toJSON();
+    }
+    return tweet;
 }
 
 module.exports = {

@@ -1,11 +1,13 @@
 let {expect} = require('chai');
 let initConnection = require('../common/init-connection');
+let sinon = require('sinon');
 
 let {
     create: createTweet,
     remove: removeTweets,
     updateCounts,
-    getMaxTweetId
+    getMaxTweetId,
+    getFirstUpdatedTweet
 } = require('./../../../backend/models/tweet');
 let TweetModel = require('./../../../backend/models/tweet/tweet-model');
 
@@ -169,6 +171,70 @@ describe('tweet', () => {
 
             let maxTweetId = await getMaxTweetId();
             expect(maxTweetId).to.equal(899999);
+        });
+    });
+
+    describe('get first updated tweet', () => {
+        beforeEach(async () => {
+            await TweetModel.remove({});
+        });
+
+        afterEach(() => {
+            Date.now.restore && Date.now.restore();
+        });
+
+        it('should return tweets with lower updateDate', async () => {
+            const firstUpdateDate = new Date(2012, 2, 2);
+            const secondUpdateDate = new Date(2012, 3, 3);
+            const thirdUpdateDate = new Date(2012, 4, 4);
+            const fourthUpdateDate = new Date(2012, 6, 6);
+            const minUpdateDate = new Date(2011, 5, 5);
+
+            let firstUpdatedTweet;
+            let lastUpdatedTweets;
+
+            await createTweet(1000, 'to-get-first-1', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+            await createTweet(2000, 'to-get-first-2', 'Author', '@author', 'Wed Jun 06 20:07:10 +0000 2012');
+
+            let tweets = await TweetModel.find({}, {_id: 1, updateDate: 1});
+            tweets = tweets.map((tweet) => tweet.toJSON());
+
+            expect(tweets).to.deep.equal([
+                {_id: 1000},
+                {_id: 2000}
+            ]);
+
+            sinon.stub(Date, 'now').returns(firstUpdateDate.getTime());
+
+            firstUpdatedTweet = await getFirstUpdatedTweet();
+            expect(firstUpdatedTweet._id).to.equals(1000);
+            lastUpdatedTweets = await TweetModel.find({}, {_id:1, updateDate: 1}).sort({updateDate: -1}).limit(1);
+            expect(lastUpdatedTweets[0].toJSON()).to.deep.equals({_id: 1000, updateDate: firstUpdateDate});
+
+            Date.now.restore();
+            sinon.stub(Date, 'now').returns(secondUpdateDate.getTime());
+            firstUpdatedTweet = await getFirstUpdatedTweet();
+            expect(firstUpdatedTweet._id).to.equals(2000);
+            lastUpdatedTweets = await TweetModel.find({}, {_id:1, updateDate: 1}).sort({updateDate: -1}).limit(1);
+            expect(lastUpdatedTweets[0].toJSON()).to.deep.equals({_id: 2000, updateDate: secondUpdateDate});
+
+            Date.now.restore();
+            sinon.stub(Date, 'now').returns(thirdUpdateDate.getTime());
+            firstUpdatedTweet = await getFirstUpdatedTweet();
+            expect(firstUpdatedTweet._id).to.equals(1000);
+            lastUpdatedTweets = await TweetModel.find({}, {_id:1, updateDate: 1}).sort({updateDate: -1}).limit(1);
+            expect(lastUpdatedTweets[0].toJSON()).to.deep.equals({_id: 1000, updateDate: thirdUpdateDate});
+
+            Date.now.restore();
+            sinon.stub(Date, 'now').returns(fourthUpdateDate.getTime());
+            await TweetModel.create({
+                _id: 3000,
+                updateDate: minUpdateDate
+            });
+            firstUpdatedTweet = await getFirstUpdatedTweet();
+            expect(firstUpdatedTweet._id).to.equals(3000);
+            lastUpdatedTweets = await TweetModel.find({}, {_id:1, updateDate: 1}).sort({updateDate: -1}).limit(1);
+            expect(lastUpdatedTweets[0].toJSON()).to.deep.equals({_id: 3000, updateDate: fourthUpdateDate});
         });
     });
 });

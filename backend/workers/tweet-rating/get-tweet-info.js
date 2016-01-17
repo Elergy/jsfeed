@@ -1,4 +1,0 @@
-
-function getTweetInfo(tweetId) {
-
-}
